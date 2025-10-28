@@ -1,0 +1,12 @@
+{
+  "name": "turf-tactician",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev:backend": "npm --workspace apps/backend run dev",
+    "dev:frontend": "npm --workspace apps/frontend run dev",
+    "dev": "npm run dev:backend & npm run dev:frontend"
+  }
+}
